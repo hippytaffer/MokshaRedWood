@@ -70,15 +70,15 @@ spectra {
 color_classes {
    color_class {
       name: "border_top";
-      color: 255 255 255 255;
+      color: 255 225 225 255;
    }
    color_class {
       name: "border_top_hilight";
-      color: 255 255 255 255;
+      color: 255 225 225 255;
    }
    color_class {
       name: "border_bottom";
-      color: 255 255 255 255;
+      color: 255 225 225 255;
    }
    color_class {
       name: "border_title";
@@ -91,26 +91,26 @@ color_classes {
    }
    color_class {
       name: "menu_base";
-      color: 255 255 255 255;
+      color: 255 0 0 255;
    }
    color_class {
       name: "menu_title";
-      color: 224 224 224 255;
+      color: 225 0 0 255;
       color3: 0 0 0 64;
    }
    color_class {
       name: "menu_title_active";
-      color: 224 224 224 255;
+      color: 157 91 43 255;
       color3: 0 0 0 64;
    }
    color_class {
       name: "menu_item";
-      color: 0 0 0 255;
+      color: 157 91 43 255;
       color3: 0 0 0 0;
    }
    color_class {
       name: "menu_item_active";
-      color: 0 0 0 255;
+      color: 157 91 43 255;
       color3: 0 0 0 0;
    }
    color_class {
@@ -120,7 +120,7 @@ color_classes {
    }
    color_class {
       name: "shelf_base";
-      color: 255 255 255 255;
+      color: 255 0 0 200;
    }
    color_class {
       name: "scrollframe_base";
@@ -159,7 +159,7 @@ color_classes {
    }
    color_class {
       name: "fileman_base";
-      color: 255 255 255 255;
+      color: 255 0 0 255;
    }
    color_class {
       name: "ilist_item_base";
