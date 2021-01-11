@@ -146,7 +146,8 @@ color_classes {
    }
    color_class {
       name: "winlist_item_active";
-      color: 224 224 224 255;
+      color: 157 91 43 255; 
+      //~ color: 224 224 224 255;
       color3: 0 0 0 64;
    }
    color_class {
@@ -161,8 +162,8 @@ color_classes {
    }
    color_class {
       name: "fileman_base";
-      color: 255 0 0 255;
-      //~ color: 225 225 225 225;
+      color: 157 91 43 255; 
+      //~ color: 255 0 0 255;
    }
    color_class {
       name: "ilist_item_base";
@@ -184,13 +185,12 @@ color_classes {
    }
    color_class {
       name: "ilist_item";
-      color: 255 225 225 225;
+      color: 157 91 43 255;
       color3: 0 0 0 0;
    } 
    color_class {
        name: "ilist_item_odd";
        color: 157 91 43 255; 
-      //~ color: 225 225 225 255;
       color3: 0 0 0 0;
    }
    color_class {
