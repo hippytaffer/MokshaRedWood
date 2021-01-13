@@ -40,7 +40,6 @@
  * replacement you will need to methodically go through all of this file
  * and make sure you have replaced/provided everything here.
  */
-
 /* Spectrum used in all the gradient icons
  * This needs to be defined outside of the collections
  *
@@ -7484,7 +7483,7 @@ group {
                /* here we say the "middle" part of the image
                 * between the borders is not filled - it's
                 * empty, so don't draw it - ignore it */
-               image.border: 7 7 7 7; 	
+               //~ image.border: 0 0 0 0; 	
                fill.smooth: 0;
             }
          }
