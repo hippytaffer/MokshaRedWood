@@ -195,7 +195,6 @@ color_classes {
    }
    color_class {
       name: "ilist_item_selected";
-      //~ color: 255 255 255 255;
       color: 90 0 0 224; 
       color3: 0 0 0 64;
    }
@@ -7444,7 +7443,7 @@ group {
                   to: "inset";
                   offset: -2 -2;
                }
-               color: 255 255 255 255;
+               color: 75 0 0 255; 
             }
          }
          part {
@@ -7454,7 +7453,7 @@ group {
                state: "default" 0.0;
                rel1.to: "base";
                rel2.to: "base";
-               color: 255 255 255 255;
+               color: 225 225 225 255;
             }
          }
          part {
@@ -7485,7 +7484,7 @@ group {
                /* here we say the "middle" part of the image
                 * between the borders is not filled - it's
                 * empty, so don't draw it - ignore it */
-               image.border: 7 7 7 7;
+               image.border: 7 7 7 7; 	
                fill.smooth: 0;
             }
          }
@@ -10912,7 +10911,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "0h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_0t.png"; \
@@ -10924,7 +10923,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "1h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255;  \
+               color: 98 0 0 255;  \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_1t.png"; \
@@ -10936,7 +10935,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "2h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_2t.png"; \
@@ -10948,7 +10947,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "3h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_3t.png"; \
@@ -10960,7 +10959,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "4h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_4t.png"; \
@@ -10972,7 +10971,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "5h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_5t.png"; \
@@ -10984,7 +10983,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "6h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_6t.png"; \
@@ -10996,7 +10995,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "7h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_7t.png"; \
@@ -11008,7 +11007,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "8h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_8t.png"; \
@@ -11020,7 +11019,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "9h" 0.0; \
                inherit: "default" 0.0; \
-               color: 169 169 169 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_9t.png"; \
@@ -11171,7 +11170,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "0h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_amt.png"; \
@@ -11183,7 +11182,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "1h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_pmt.png"; \
@@ -11662,7 +11661,8 @@ CONNMAN_ICON(ethernet)
             }
             description { state: "hidden" 0.0;
                inherit: "default" 0.0;
-               color: 255 255 255 64;
+               //~ color: 255 255 255 64;
+               color: 98 0 0 225;
             }
          }
          part { name: "weekend"; type: RECT;
@@ -12828,8 +12828,8 @@ CONNMAN_ICON(ethernet)
             type: SWALLOW;
             clip_to: "item_clip";
             description { state: "default" 0.0;
-               rel1.offset: 2   2;
-               rel2.offset: -3   -3;
+               rel1.offset: 2 2;
+               rel2.offset: -3 -3;
             }
             description { state: "bigger" 0.0;
             }
@@ -13711,7 +13711,8 @@ CONNMAN_ICON(ethernet)
       parts {
       part { name: "base"; type: RECT;
          description { state: "default" 0.0;
-            color: 0 0 0 0;
+            //~ color: 0 0 0 0;
+            color: 98 0 0 225;
          }
          description { state: "disabled" 0.0;
             inherit: "default" 0.0;
@@ -33766,7 +33767,8 @@ target: "region";
 
                rel2.to: "base";
                /* rel2.offset: -1 -3; */
-               color: 245 245 245 255;
+               color: 224 224 224 255;
+               //~ color: 98 0 0 255;
             }
          }
          part {
@@ -33860,6 +33862,7 @@ target: "region";
                   border: 4 4 4 4;
                }
                color: 255 255 255 235;
+               //~ color: 98 0 0 225;
             }
          }
          part {
@@ -33923,7 +33926,8 @@ target: "region";
                   offset: 10  -4;
 
                }
-               color: 60 60 60 255;
+               //~ color: 60 60 60 255;
+               color: 98 0 0 225;
                color3: 255 255 255 68;
                text {
                   font: "Sans:style=Bold";
@@ -33946,7 +33950,7 @@ target: "region";
                fixed: 1 1;
                rel1 {
                   relative: 1.0  0.0;
-                  offset: -2    -2;
+                  offset: -2 -2;
                   to: "e.text.label";
                }
                rel2 {
