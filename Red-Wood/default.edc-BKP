@@ -40,7 +40,6 @@
  * replacement you will need to methodically go through all of this file
  * and make sure you have replaced/provided everything here.
  */
-
 /* Spectrum used in all the gradient icons
  * This needs to be defined outside of the collections
  *
@@ -49,8 +48,8 @@
 #if 0
 spectra {
    spectrum {
-      name: "black_to_trans";
-      color: 0 0 0 255 1;
+      name: "red_to_trans";
+      color: 225 0 0 255 1;
       color: 0 0 0 0 1;
    }
 }
@@ -70,15 +69,15 @@ spectra {
 color_classes {
    color_class {
       name: "border_top";
-      color: 255 255 255 255;
+      color: 225 0 0 225;
    }
    color_class {
       name: "border_top_hilight";
-      color: 255 255 255 255;
+      color: 255 225 200 255;
    }
    color_class {
       name: "border_bottom";
-      color: 255 255 255 255;
+      color: 255 225 225 255;
    }
    color_class {
       name: "border_title";
@@ -91,26 +90,26 @@ color_classes {
    }
    color_class {
       name: "menu_base";
-      color: 255 255 255 255;
+      color: 255 0 0 255;
    }
    color_class {
       name: "menu_title";
-      color: 224 224 224 255;
+      color: 157 91 43 255; 
       color3: 0 0 0 64;
    }
    color_class {
       name: "menu_title_active";
-      color: 224 224 224 255;
+      color: 157 91 43 255;
       color3: 0 0 0 64;
    }
    color_class {
       name: "menu_item";
-      color: 0 0 0 255;
+      color: 225 225 225 200;
       color3: 0 0 0 0;
    }
    color_class {
       name: "menu_item_active";
-      color: 0 0 0 255;
+      color: 225 225 225 200;
       color3: 0 0 0 0;
    }
    color_class {
@@ -120,31 +119,34 @@ color_classes {
    }
    color_class {
       name: "shelf_base";
-      color: 255 255 255 255;
+      color: 255 0 0 200;
    }
    color_class {
       name: "scrollframe_base";
-      color: 195 195 195 255;
+      color: 100 0 0 224;
       color3: 0 0 0 64;
    }
-   // this seems totaly bogus, should be per module or really used as
+   //this seems totaly bogus, should be per module or really used as
    // a unique color for all modules!
-   //    color_class {
-   //       name: "module_label";
-   //       color: 0 0 0 0;
-   //    }
+   color_class {
+      name: "module_label";
+      color: 157 91 43 255;
+   }
    color_class {
       name: "winlist_label";
-      color: 0 0 0 255;
+      color: 157 91 43 255; 
+      //~ color: 0 0 0 255;
    }
    color_class {
       name: "winlist_item";
-      color: 0 0 0 255;
+      //~ color: 157 91 43 255;
+      color: 169 169 169 255;
       color3: 0 0 0 0;
    }
    color_class {
       name: "winlist_item_active";
-      color: 224 224 224 255;
+      color: 157 91 43 255; 
+      //~ color: 224 224 224 255;
       color3: 0 0 0 64;
    }
    color_class {
@@ -159,42 +161,45 @@ color_classes {
    }
    color_class {
       name: "fileman_base";
-      color: 255 255 255 255;
+      color: 157 91 43 255; 
+      //~ color: 255 0 0 255;
    }
    color_class {
       name: "ilist_item_base";
-      color: 255 255 255 255;
+      color: 90 0 0 225;
    }
    color_class {
       name: "ilist_item_odd_base";
-      color: 255 255 255 255;
+      color: 90 0 0 255;
    }
    color_class {
       name: "ilist_item_header_base";
-      color: 255 255 255 255;
+      color: 90 0 0 255;
+      color3: 90 0 0 200; 
    }
    color_class {
       name: "ilist_item_header_odd_base";
-      color: 255 255 255 255;
+      color: 90 0 0 255;
+      color3: 90 0 0 200; 
    }
    color_class {
       name: "ilist_item";
-      color: 0 0 0 255;
+      color: 157 91 43 255;
       color3: 0 0 0 0;
-   }
+   } 
    color_class {
-      name: "ilist_item_odd";
-      color: 0 0 0 255;
+       name: "ilist_item_odd";
+       color: 157 91 43 255; 
       color3: 0 0 0 0;
    }
    color_class {
       name: "ilist_item_selected";
-      color: 255 255 255 255;
+      color: 90 0 0 224; 
       color3: 0 0 0 64;
    }
    color_class {
       name: "ilist_item_header";
-      color: 224 224 224 255;
+      color: 224 224 224 225;
       color3: 0 0 0 32;
    }
    color_class {
@@ -204,27 +209,31 @@ color_classes {
    }
    color_class {
       name: "dialog_base";
-      color: 255 255 255 255;
+      color: 97 0 0 255; 
    }
    color_class {
       name: "move_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "resize_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "check_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "check_text_disabled";
-      color: 0 0 0 255;
+      color: 0 0 0 128;
    }
    color_class {
       name: "radio_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "radio_text_disabled";
@@ -232,7 +241,8 @@ color_classes {
    }
    color_class {
       name: "entry_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "entry_text_disabled";
@@ -240,7 +250,8 @@ color_classes {
    }
    color_class {
       name: "slider_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "slider_text_disabled";
@@ -248,11 +259,12 @@ color_classes {
    }
    color_class {
       name: "frame_base";
-      color: 255 255 255 255;
+      color: 97 0 0 255;
    }
    color_class {
       name: "label_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
    }
    color_class {
       name: "label_text_disabled";
@@ -260,11 +272,13 @@ color_classes {
    }
    color_class {
       name: "comp_focus-out_color";
-      color: 255 255 255 220;
+      color: 157 91 43 255; 
+      //~ color: 255 255 255 220;
    }
    color_class {
       name: "tasks_text";
-      color: 0 0 0 255;
+      //~ color: 0 0 0 255;
+      color: 157 91 43 255; 
       color3: 0 0 0 0;
    }
    color_class {
@@ -758,7 +772,7 @@ group {
                   /* the text will not determine minimum horizontal
                    * size but WILL determine minimal vertical size
                    * (thus 0 1 - horiz then vert flags) */
-                  align: 0.0 0.0;
+                  align: 0.5 0.0;
                   /* align text to top-left of the region
                    * given */
                   text_class: "title_bar";
@@ -1129,7 +1143,7 @@ group {
                    * another part */
                   font: "Sans:style=Bold";
                   size: 10;
-                  align: 0.0 0.0;
+                  align: 0.5 0.0;
                   min: 0 1;
                   text_class: "title_bar";
                }
@@ -6684,6 +6698,7 @@ group {
             description {
                state: "default" 0.0;
                visible: 0;
+               color: 225 0 0 225;
                rel1.to: "title_back";
                rel2.to: "title_back";
                image {
@@ -7427,7 +7442,7 @@ group {
                   to: "inset";
                   offset: -2 -2;
                }
-               color: 255 255 255 255;
+               color: 75 0 0 255; 
             }
          }
          part {
@@ -7437,7 +7452,7 @@ group {
                state: "default" 0.0;
                rel1.to: "base";
                rel2.to: "base";
-               color: 255 255 255 255;
+               color: 225 225 225 255;
             }
          }
          part {
@@ -7468,7 +7483,7 @@ group {
                /* here we say the "middle" part of the image
                 * between the borders is not filled - it's
                 * empty, so don't draw it - ignore it */
-               image.border: 7 7 7 7;
+               //~ image.border: 0 0 0 0; 	
                fill.smooth: 0;
             }
          }
@@ -8752,7 +8767,8 @@ CONNMAN_ICON(ethernet)
                state: "active" 0.0;
                inherit: "default" 0.0;
                visible: 0;
-               color: 255 255 255 0;
+               color: 157 91 43 255; 
+               //~ color: 255 255 255 0;
             }
          }
          part {
@@ -8880,7 +8896,8 @@ CONNMAN_ICON(ethernet)
                   relative: 1.0 0.0;
                   offset: -1 0;
                }
-               color: 224 224 224 255;
+               color: 157 91 43 255; 
+               //~ color: 224 224 224 255;
                color3: 0 0 0 64;
                text {
                   font: "Sans:style=Bold";
@@ -8959,7 +8976,8 @@ CONNMAN_ICON(ethernet)
             description {
                state: "default" 0.0;
                visible: 1;
-               color: 255 255 255 255;
+               color: 157 91 43 255; 
+               //~ color: 255 255 255 255;
                rel1 {
                   to: "zoom";
                   offset: -1 -1;
@@ -10892,7 +10910,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "0h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_0t.png"; \
@@ -10904,7 +10922,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "1h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255;  \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_1t.png"; \
@@ -10916,7 +10934,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "2h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_2t.png"; \
@@ -10928,7 +10946,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "3h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_3t.png"; \
@@ -10940,7 +10958,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "4h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_4t.png"; \
@@ -10952,7 +10970,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "5h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_5t.png"; \
@@ -10964,7 +10982,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "6h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_6t.png"; \
@@ -10976,7 +10994,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "7h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_7t.png"; \
@@ -10988,7 +11006,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "8h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_8t.png"; \
@@ -11000,7 +11018,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "9h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_9t.png"; \
@@ -11151,7 +11169,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "0h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_amt.png"; \
@@ -11163,7 +11181,7 @@ CONNMAN_ICON(ethernet)
             } \
             description { state: "1h" 0.0; \
                inherit: "default" 0.0; \
-               color: 128 128 128 255; \
+               color: 98 0 0 255; \
                visible: 0; \
                rel1.relative: 0.0 1.0; \
                image.normal: "flip_pmt.png"; \
@@ -11642,7 +11660,8 @@ CONNMAN_ICON(ethernet)
             }
             description { state: "hidden" 0.0;
                inherit: "default" 0.0;
-               color: 255 255 255 64;
+               //~ color: 255 255 255 64;
+               color: 98 0 0 225;
             }
          }
          part { name: "weekend"; type: RECT;
@@ -12808,8 +12827,8 @@ CONNMAN_ICON(ethernet)
             type: SWALLOW;
             clip_to: "item_clip";
             description { state: "default" 0.0;
-               rel1.offset: 2   2;
-               rel2.offset: -3   -3;
+               rel1.offset: 2 2;
+               rel2.offset: -3 -3;
             }
             description { state: "bigger" 0.0;
             }
@@ -13691,7 +13710,8 @@ CONNMAN_ICON(ethernet)
       parts {
       part { name: "base"; type: RECT;
          description { state: "default" 0.0;
-            color: 0 0 0 0;
+            //~ color: 0 0 0 0;
+            color: 98 0 0 225;
          }
          description { state: "disabled" 0.0;
             inherit: "default" 0.0;
@@ -21999,7 +22019,8 @@ target: "region";
             description {
                state: "default" 0.0;
                visible: 0;
-               color: 255 255 255 0;
+               //~ color: 255 255 255 0;
+               color: 90 0 0 224; 
                rel1 {
                   relative: 0.0 0.0;
                   offset: -5 -5;
@@ -22017,7 +22038,8 @@ target: "region";
                state: "selected" 0.0;
                inherit: "default" 0.0;
                visible: 1;
-               color: 255 255 255 255;
+               color: 90 0 0 224; 
+               //~ color: 255 255 255 255;
                rel1 {
                   relative: 0.0 0.0;
                   offset: -2 -2;
@@ -26021,7 +26043,8 @@ target: "region";
                state: "selected" 0.0;
                inherit: "default" 0.0;
                visible: 1;
-               color: 255 255 255 255;
+               color: 90 0 0 224; 
+               //~ color: 255 255 255 255;
                rel1 {
                   relative: 0.0 0.0;
                   offset: -2 -2;
@@ -26097,7 +26120,8 @@ target: "region";
                state: "selected" 0.0;
                inherit: "default" 0.0;
                visible: 1;
-               color: 255 255 255 255;
+               color: 90 0 0 224; 
+               //~ color: 255 255 255 255;
             }
          }
          part {
@@ -26183,7 +26207,8 @@ target: "region";
             description {
                state: "visible" 0.0;
                inherit: "default" 0.0;
-               color: 255 255 255 255;
+               color: 90 0 0 224; 
+               //~ color: 255 255 255 255;
                visible: 1;
             }
          }
@@ -26219,7 +26244,8 @@ target: "region";
                state: "default" 0.0;
                rel1.offset: 1 1;
                rel2.offset: -2  -2;
-               color: 255 255 255 255;
+               color: 90 0 0 224; 
+               //~ color: 255 255 255 255;
             }
             description {
                state: "disabled" 0.0;
@@ -26266,7 +26292,8 @@ target: "region";
                   middle: 0;
                }
                fill.smooth : 0;
-               color: 255 255 255 255;
+               color: 90 0 0 224; 
+               //~ color: 255 255 255 255;
             }
             description {
                state: "disabled" 0.0;
@@ -27764,7 +27791,8 @@ target: "region";
                state: "default" 0.0;
                rel1.to: "passwd_border";
                rel2.to: "passwd_border";
-               color: 255 255 255 255;
+               color: 169 169 169 255;
+               //~ color: 255 255 255 255;
             }
          }
          part {
@@ -33738,7 +33766,8 @@ target: "region";
 
                rel2.to: "base";
                /* rel2.offset: -1 -3; */
-               color: 245 245 245 255;
+               color: 224 224 224 255;
+               //~ color: 98 0 0 255;
             }
          }
          part {
@@ -33832,6 +33861,7 @@ target: "region";
                   border: 4 4 4 4;
                }
                color: 255 255 255 235;
+               //~ color: 98 0 0 225;
             }
          }
          part {
@@ -33895,7 +33925,8 @@ target: "region";
                   offset: 10  -4;
 
                }
-               color: 60 60 60 255;
+               //~ color: 60 60 60 255;
+               color: 98 0 0 225;
                color3: 255 255 255 68;
                text {
                   font: "Sans:style=Bold";
@@ -33918,7 +33949,7 @@ target: "region";
                fixed: 1 1;
                rel1 {
                   relative: 1.0  0.0;
-                  offset: -2    -2;
+                  offset: -2 -2;
                   to: "e.text.label";
                }
                rel2 {
@@ -35072,12 +35103,12 @@ target: "region";
                rel1 {
                   to: "base";
                   relative: 0.0 0.0;
-                  offset: 4   0;
+                  offset: 4   3;
                }
                rel2 {
                   to: "base";
                   relative: 1.0 1.0;
-                  offset: -3  -20;
+                  offset: -3  -25;
                }
             }
          }
@@ -35140,10 +35171,10 @@ target: "region";
             description {
                state: "default" 0.0;
                rel1 {
-                  offset: 2 -18;
+                  offset: 2 -20;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -8;
+               rel2.offset: -2 -10;
                color3: 20 20 20 60;
                color: 255 255 255 255;
                text {
@@ -35158,10 +35189,10 @@ target: "region";
                state: "selected" 0.0;
                inherit: "default" 0.0;
                rel1 {
-                  offset: 2 -18;
+                  offset: 2 -20;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -8;
+               rel2.offset: -2 -10;
                color: 250 250 250 255;
                color3: 20 20 20 40;
             }
@@ -39514,8 +39545,8 @@ target: "region";
             }
             description { state: "iconified" 0.0;
                inherit: "default" 0.0;
-               rel1.relative: 0.0 0.25;
-               rel2.relative: 0.0 0.75;
+               rel1.relative: 0.0 0.15;
+               rel2.relative: 0.0 0.85;
             }
          }
          part { name: "icon_area2"; type: RECT;
@@ -39865,8 +39896,8 @@ target: "region";
             }
             description { state: "iconified" 0.0;
                inherit: "default" 0.0;
-               rel1.relative: 0.25 0.25;
-               rel2.relative: 0.75 0.75;
+               rel1.relative: 0.15 0.15;
+               rel2.relative: 0.85 0.85;
             }
          }
          part { name: "icon_area2"; type: RECT;

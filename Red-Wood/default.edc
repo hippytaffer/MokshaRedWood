@@ -104,12 +104,12 @@ color_classes {
    }
    color_class {
       name: "menu_item";
-      color: 157 91 43 255;
+      color: 225 225 225 200;
       color3: 0 0 0 0;
    }
    color_class {
       name: "menu_item_active";
-      color: 157 91 43 255;
+      color: 225 225 225 200;
       color3: 0 0 0 0;
    }
    color_class {
@@ -1085,7 +1085,8 @@ group {
                }
                image {
                   normal: "bd_title_bg.png";
-                  border: 7 7 2 7;
+                  //~ border: 7 7 2 7;
+                  border: 3 3 5 5;
                }
                fill.smooth: 0;
             }
