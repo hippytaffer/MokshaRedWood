@@ -339,15 +339,15 @@ group {
          image: "img/bd_title_bg.png" COMP;
          image: "img/bd_title_over.png" COMP;
          image: "img/bd_resize_b.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
          image: "img/exclam.png" COMP;
          image: "img/bd_button_close_shadow.png" COMP;
          image: "img/bd_button_close_focused.png" COMP;
@@ -572,14 +572,14 @@ group {
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             /* this is an animation to spin a wheel when the app
-             * seems too busy to respond to pings */
+             * seems too img/busy-1.png to respond to pings */
             mouse_events: 0;
             description {
                state: "default" 0.0;
                visible: 0;
-               /* nomrally the busy part is not visible */
+               /* nomrally the img/busy-1.png part is not visible */
                color: 255 255 255 0;
                /* and its alpha is 0 - se will fade it
                 * inm later so alpha to 0 (but 255 255
@@ -601,15 +601,15 @@ group {
                rel1.to: "icon_area";
                rel2.to: "icon_area";
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                   /* and we use image tweening. that
                    * means that we flip through a series
                    * of images when moving TO this state
@@ -631,15 +631,15 @@ group {
                visible: 1;
                color: 255 255 255 255;
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                } 
             }
          }
@@ -1621,7 +1621,7 @@ group {
             signal: "e,state,unhung";
             source: "e";
             action: ACTION_STOP;
-            target: "busy_anim";
+            target: "img/busy-1.png_anim";
          }
          program {
             name: "unhung2";
@@ -1629,11 +1629,11 @@ group {
             source: "e";
             action: STATE_SET "default" 0.0;
             target: "e.swallow.icon";
-            target: "busy";
+            target: "img/busy-1.png";
             transition: ACCELERATE 0.5;
          }
          program {
-            name: "busy_anim";
+            name: "img/busy-1.png_anim";
             /* multiple programs can be triggered
              * from the same signals so this is
              * also run when an app becomes "hung" */
@@ -1641,8 +1641,8 @@ group {
             source: "e";
             action: STATE_SET "visible" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
          // don't have states/anim for a generic iconify action
          //    program { name: "xx";
@@ -1829,15 +1829,15 @@ group {
          image: "img/bd_title_bg.png" COMP;
          image: "img/bd_title_over.png" COMP;
          image: "img/bd_resize_b.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
          image: "img/exclam.png" COMP;
          image: "img/bd_button_close_shadow.png" COMP;
          image: "img/bd_button_close_focused.png" COMP;
@@ -1973,7 +1973,7 @@ group {
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             mouse_events: 0;
             description {
                state: "default" 0.0;
@@ -1985,15 +1985,15 @@ group {
                rel1.to: "icon_area";
                rel2.to: "icon_area";
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                }
             }
             description {
@@ -2002,15 +2002,15 @@ group {
                visible: 1;
                color: 255 255 255 255;
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                } 
             }
          }
@@ -2836,7 +2836,7 @@ group {
             source: "e";
             /* FIXME: */
             action: ACTION_STOP;
-            target: "busy_anim";
+            target: "img/busy-1.png_anim";
          }
          program {
             name: "unhung2";
@@ -2845,17 +2845,17 @@ group {
             /* FIXME: */
             action: STATE_SET "default" 0.0;
             target: "e.swallow.icon";
-            target: "busy";
+            target: "img/busy-1.png";
             transition: ACCELERATE 0.5;
          }
          program {
-            name: "busy_anim";
+            name: "img/busy-1.png_anim";
             signal: "e,state,hung";
             source: "e";
             action: STATE_SET "visible" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
          program {
             name: "max_full";
@@ -3004,15 +3004,15 @@ group {
          image: "img/bd_top_hilight.png" COMP;
          image: "img/bd_title_bg.png" COMP;
          image: "img/bd_title_over.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
          image: "img/exclam.png" COMP;
          image: "img/bd_button_close_shadow.png" COMP;
          image: "img/bd_button_close_focused.png" COMP;
@@ -3117,7 +3117,7 @@ group {
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             mouse_events: 0;
             description {
                state: "default" 0.0;
@@ -3129,15 +3129,15 @@ group {
                rel1.to: "icon_area";
                rel2.to: "icon_area";
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                }
             }
             description {
@@ -3146,15 +3146,15 @@ group {
                visible: 1;
                color: 255 255 255 255;
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                } 
             }
          }
@@ -3806,7 +3806,7 @@ group {
             source: "e";
             /* FIXME: */
             action: ACTION_STOP;
-            target: "busy_anim";
+            target: "img/busy-1.png_anim";
          }
          program {
             name: "unhung2";
@@ -3815,17 +3815,17 @@ group {
             /* FIXME: */
             action: STATE_SET "default" 0.0;
             target: "e.swallow.icon";
-            target: "busy";
+            target: "img/busy-1.png";
             transition: ACCELERATE 0.5;
          }
          program {
-            name: "busy_anim";
+            name: "img/busy-1.png_anim";
             signal: "e,state,hung";
             source: "e";
             action: STATE_SET "visible" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
          program {
             name: "max_full";
@@ -3929,15 +3929,15 @@ group {
          image: "img/bd_title_bg.png" COMP;
          image: "img/bd_title_over.png" COMP;
          image: "img/bd_resize_b.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
          image: "img/exclam.png" COMP;
          image: "img/bd_button_close_shadow.png" COMP;
          image: "img/bd_button_close_focused.png" COMP;
@@ -4066,7 +4066,7 @@ group {
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             mouse_events: 0;
             description {
                state: "default" 0.0;
@@ -4078,15 +4078,15 @@ group {
                rel1.to: "icon_area";
                rel2.to: "icon_area";
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                }
             }
             description {
@@ -4095,15 +4095,15 @@ group {
                visible: 1;
                color: 255 255 255 255;
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                } 
             }
          }
@@ -4791,7 +4791,7 @@ group {
             source: "e";
             /* FIXME: */
             action: ACTION_STOP;
-            target: "busy_anim";
+            target: "img/busy-1.png_anim";
          }
          program {
             name: "unhung2";
@@ -4800,17 +4800,17 @@ group {
             /* FIXME: */
             action: STATE_SET "default" 0.0;
             target: "e.swallow.icon";
-            target: "busy";
+            target: "img/busy-1.png";
             transition: ACCELERATE 0.5;
          }
          program {
-            name: "busy_anim";
+            name: "img/busy-1.png_anim";
             signal: "e,state,hung";
             source: "e";
             action: STATE_SET "visible" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
          program {
             name: "max_full";
@@ -4927,15 +4927,15 @@ group {
          image: "img/bd_top_hilight.png" COMP;
          image: "img/bd_title_bg.png" COMP;
          image: "img/bd_title_over.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
          image: "img/exclam.png" COMP;
          image: "img/bd_button_close_shadow.png" COMP;
          image: "img/bd_button_close_focused.png" COMP;
@@ -5034,7 +5034,7 @@ group {
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             mouse_events: 0;
             description {
                state: "default" 0.0;
@@ -5046,15 +5046,15 @@ group {
                rel1.to: "icon_area";
                rel2.to: "icon_area";
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-9.png";
                }
             }
             description {
@@ -5063,15 +5063,15 @@ group {
                visible: 1;
                color: 255 255 255 255;
                image {
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
-                  normal: "busy-img/9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
+                  normal: "img/busy-1.png";
                } 
             }
          }
@@ -5584,7 +5584,7 @@ group {
             source: "e";
             /* FIXME: */
             action: ACTION_STOP;
-            target: "busy_anim";
+            target: "img/busy-1.png_anim";
          }
          program {
             name: "unhung2";
@@ -5593,17 +5593,17 @@ group {
             /* FIXME: */
             action: STATE_SET "default" 0.0;
             target: "e.swallow.icon";
-            target: "busy";
+            target: "img/busy-1.png";
             transition: ACCELERATE 0.5;
          }
          program {
-            name: "busy_anim";
+            name: "img/busy-1.png_anim";
             signal: "e,state,hung";
             source: "e";
             action: STATE_SET "visible" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
          program {
             name: "max_full";
@@ -8059,11 +8059,11 @@ group {
             set { \
                name: "connman_"##_name; \
                image { \
-                  image: "connman_"##_name##"img/_128.png" COMP; \
+                  image: "connman_"##_name##"_128.png" COMP; \
                   size: (_min+1) (_min+1) 1000 1000; \
                } \
                image { \
-                  image: "connman_"##_name##"img/_32.png" COMP; \
+                  image: "connman_"##_name##"_32.png" COMP; \
                   size: 1 1 _min _min; \
                } \
             } \
@@ -8148,13 +8148,13 @@ CONNMAN_ICON(ethernet)
             set { \
                name: "wifi_bar_"##_name; \
                image { \
-                  image: "connman_wifi_"##_name##"img/_128.png" COMP; \
+                  image: "img/connman_wifi_"##_name##"_128.png" COMP; \
                   /* FIXME: check why it doesn't work */ \
                   /* size: 33 33 128 128; \ */ \
                   size: 33 33 1000 1000; \
                } \
                image { \
-                  image: "connman_wifi_"##_name##"img/_32.png" COMP; \
+                  image: "img/connman_wifi_"##_name##"_32.png" COMP; \
                   size: 1 1 32 32; \
                } \
             } \
@@ -17821,21 +17821,21 @@ target: "region";
       name: "e/fileman/default/overlay";
       alias: "e/fileman/desktop/overlay";
       images {
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
          image: "img/gadman_frame.png" COMP;
          image: "img/gadman_border.png" COMP;
       }
       parts {
          part {
-            name: "busy_clip";
+            name: "img/busy-1.png_clip";
             type: RECT;
             mouse_events: 0;
             description {
@@ -17852,7 +17852,7 @@ target: "region";
          part {
             name: "overlay";
             mouse_events: 0;
-            clip_to: "busy_clip";
+            clip_to: "img/busy-1.png_clip";
             description {
                state: "default" 0.0;
                rel1 {
@@ -17871,16 +17871,16 @@ target: "region";
          part {
             name: "border";
             mouse_events: 0;
-            clip_to: "busy_clip";
+            clip_to: "img/busy-1.png_clip";
             description {
                state: "default" 0.0;
                rel1 {
-                  to_x: "e.text.busy_label";
-                  to_y: "busy";
+                  to_x: "e.text.img/busy-1.png_label";
+                  to_y: "img/busy-1.png";
                   offset: -20 -20;
                }
                rel2 {
-                  to: "e.text.busy_label";
+                  to: "e.text.img/busy-1.png_label";
                   offset: 19 9;
                }
                image {
@@ -17892,8 +17892,8 @@ target: "region";
             }
          }
          part {
-            name: "busy";
-            clip_to: "busy_clip";
+            name: "img/busy-1.png";
+            clip_to: "img/busy-1.png_clip";
             mouse_events: 0;
             description {
                state: "default" 0.0;
@@ -17910,35 +17910,35 @@ target: "region";
                   offset: -9 -9;
                }
                image {
-                  normal: "busy-img/9.png";
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
+                  normal: "img/busy-9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
                }
             }
          }
          part {
-            name: "e.text.busy_label";
+            name: "e.text.img/busy-1.png_label";
             type: TEXT;
             effect: SOFT_SHADOW;
-            clip_to: "busy_clip";
+            clip_to: "img/busy-1.png_clip";
             mouse_events: 0;
             scale: 1;
             description {
                state: "default" 0.0;
                align: 0.5 0.0;
                rel1 {
-                  to: "busy";
+                  to: "img/busy-1.png";
                   relative: 0.0 1.0;
                   offset: 0 4;
                }
                rel2 {
-                  to: "busy";
+                  to: "img/busy-1.png";
                   relative: 1.0 1.0;
                   offset: -1 4;
                }
@@ -18002,28 +18002,28 @@ target: "region";
       programs {
          program {
             name: "go1";
-            signal: "e,state,busy,start";
+            signal: "e,state,img/busy-1.png,start";
             source: "e";
             action: STATE_SET "active" 0.0;
             transition: SINUSOIDAL 1.0;
-            target: "busy_clip";
+            target: "img/busy-1.png_clip";
          }
          program {
             name: "go2";
-            signal: "e,state,busy,start";
+            signal: "e,state,img/busy-1.png,start";
             source: "e";
             action: STATE_SET "default" 0.0;
             transition: LINEAR 0.5;
-            target: "busy";
+            target: "img/busy-1.png";
             after: "go2";
          }
          program {
             name: "stop1";
-            signal: "e,state,busy,stop";
+            signal: "e,state,img/busy-1.png,stop";
             source: "e";
             action: STATE_SET "default" 0.0;
             transition: SINUSOIDAL 1.0;
-            target: "busy_clip";
+            target: "img/busy-1.png_clip";
             after: "stop2";
          }
          program {
@@ -22554,15 +22554,15 @@ target: "region";
          image: "img/vgrad_dark.png" COMP;
          image: "img/shelf_alt_over.png" COMP;
          image: "img/logo_white_128.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
       }
       styles {
          style {
@@ -22600,7 +22600,7 @@ target: "region";
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             mouse_events: 0;
             description {
                state: "default" 0.0;
@@ -22619,15 +22619,15 @@ target: "region";
                   offset: -1 1;
                }
                image {
-                  normal: "busy-img/9.png";
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
+                  normal: "img/busy-9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
                }
             }
          }
@@ -22657,7 +22657,7 @@ target: "region";
                rel1 {
                   offset: 8 8;
                   relative: 0.0 1.0;
-                  to_y: "busy";
+                  to_y: "img/busy-1.png";
                }
                rel2.offset: -9 -9;
                text {
@@ -22669,13 +22669,13 @@ target: "region";
       }
       programs {
          program {
-            name: "busy_anim";
+            name: "img/busy-1.png_anim";
             signal: "show";
             source: "";
             action: STATE_SET "default" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
       }
    }
@@ -31989,15 +31989,15 @@ target: "region";
          image: "wp-img/tb3.png" COMP;
          image: "wp-img/tbs.png" COMP;
          image: "img/big_arrow_up.png" COMP;
-         image: "busy-img/1.png" COMP;
-         image: "busy-img/2.png" COMP;
-         image: "busy-img/3.png" COMP;
-         image: "busy-img/4.png" COMP;
-         image: "busy-img/5.png" COMP;
-         image: "busy-img/6.png" COMP;
-         image: "busy-img/7.png" COMP;
-         image: "busy-img/8.png" COMP;
-         image: "busy-img/9.png" COMP;
+         image: "img/busy-1.png" COMP;
+         image: "img/busy-2.png" COMP;
+         image: "img/busy-3.png" COMP;
+         image: "img/busy-4.png" COMP;
+         image: "img/busy-5.png" COMP;
+         image: "img/busy-6.png" COMP;
+         image: "img/busy-7.png" COMP;
+         image: "img/busy-8.png" COMP;
+         image: "img/busy-9.png" COMP;
       }
       parts {
          part {
@@ -32377,7 +32377,7 @@ target: "region";
             }
          }
          part {
-            name: "busy_clip";
+            name: "img/busy-1.png_clip";
             type: RECT;
             description {
                state: "default" 0.0;
@@ -32391,10 +32391,10 @@ target: "region";
             }
          }
          part {
-            name: "e.text.busy_label";
+            name: "e.text.img/busy-1.png_label";
             type: TEXT;
             effect: SOFT_SHADOW;
-            clip_to: "busy_clip";
+            clip_to: "img/busy-1.png_clip";
             mouse_events: 0;
             scale: 1;
             description {
@@ -32402,12 +32402,12 @@ target: "region";
                fixed: 0 1;
                align: 0.5 0.0;
                rel1 {
-                  to: "busy";
+                  to: "img/busy-1.png";
                   relative: 0.0 1.0;
                   offset: 0 4;
                }
                rel2 {
-                  to: "busy";
+                  to: "img/busy-1.png";
                   relative: 1.0 1.0;
                   offset: -1 4;
                }
@@ -32422,9 +32422,9 @@ target: "region";
             }
          }
          part {
-            name: "busy";
+            name: "img/busy-1.png";
             mouse_events: 0;
-            clip_to: "busy_clip";
+            clip_to: "img/busy-1.png_clip";
             description {
                state: "default" 0.0;
                fixed: 1 1;
@@ -32441,15 +32441,15 @@ target: "region";
                   offset: -1 1;
                }
                image {
-                  normal: "busy-img/9.png";
-                  tween: "busy-img/1.png";
-                  tween: "busy-img/2.png";
-                  tween: "busy-img/3.png";
-                  tween: "busy-img/4.png";
-                  tween: "busy-img/5.png";
-                  tween: "busy-img/6.png";
-                  tween: "busy-img/7.png";
-                  tween: "busy-img/8.png";
+                  normal: "img/busy-9.png";
+                  tween: "img/busy-1.png";
+                  tween: "img/busy-2.png";
+                  tween: "img/busy-3.png";
+                  tween: "img/busy-4.png";
+                  tween: "img/busy-5.png";
+                  tween: "img/busy-6.png";
+                  tween: "img/busy-7.png";
+                  tween: "img/busy-8.png";
                }
             }
          }
@@ -32515,35 +32515,35 @@ target: "region";
             transition: DECELERATE 1.0;
          }
          program {
-            name: "busy1";
-            signal: "e,state,busy,on";
+            name: "img/busy-1.png1";
+            signal: "e,state,img/busy-1.png,on";
             source: "e";
             action: STATE_SET "visible" 0.0;
             transition: LINEAR 1.0;
-            target: "busy_clip";
+            target: "img/busy-1.png_clip";
          }
          program {
-            name: "busy_anim";
-            signal: "e,state,busy,on";
+            name: "img/busy-1.png_anim";
+            signal: "e,state,img/busy-1.png,on";
             source: "e";
             action: STATE_SET "default" 0.0;
             transition: LINEAR 0.3333;
-            target: "busy";
-            after: "busy_anim";
+            target: "img/busy-1.png";
+            after: "img/busy-1.png_anim";
          }
          program {
-            name: "busy2";
-            signal: "e,state,busy,off";
+            name: "img/busy-1.png2";
+            signal: "e,state,img/busy-1.png,off";
             source: "e";
             action: STATE_SET "default" 0.0;
             transition: LINEAR 1.0;
-            target: "busy_clip";
-            after: "busy3";
+            target: "img/busy-1.png_clip";
+            after: "img/busy-1.png3";
          }
          program {
-            name: "busy3";
+            name: "img/busy-1.png3";
             action: ACTION_STOP;
-            target: "busy_anim";
+            target: "img/busy-1.png_anim";
          }
       }
    }
@@ -36837,8 +36837,8 @@ target: "region";
 	group {
 		name: "e/modules/illume_mode_toggle/main";
 		images.image: "illume-mode-img/single.png" COMP;
-		images.image: "illume-mode-dual-img/left.png" COMP;
-		images.image: "illume-mode-dual-img/top.png" COMP;
+		images.image: "img/illume-mode-dual/left.png" COMP;
+		images.image: "img/illume-mode-dual-top.png" COMP;
 		images {
 			image: "img/bt_base1.png" COMP;
 			image: "img/bt_base2.png" COMP;
@@ -36912,11 +36912,11 @@ target: "region";
 				}
 				description { state: "dual_left" 0.0;
 					inherit: "default" 0.0;
-					image.normal: "illume-mode-dual-img/left.png";
+					image.normal: "img/illume-mode-dual/left.png";
 				}
 				description { state: "dual_top" 0.0;
 					inherit: "default" 0.0;
-					image.normal: "illume-mode-dual-img/top.png";
+					image.normal: "img/illume-mode-dual-top.png";
 				}
 				program { name: "state_single";
 				   signal: "e,mode,single";
@@ -37234,7 +37234,7 @@ target: "region";
 
    group { name: "e/comp/default";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
          image: "img/bt_glow.png" COMP;
       }
       parts {
@@ -37264,7 +37264,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -37413,7 +37413,7 @@ target: "region";
 //----
    group { name: "e/comp/wobble";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
          image: "img/bt_glow.png" COMP;
       }
       parts {
@@ -37464,7 +37464,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -37701,14 +37701,14 @@ target: "region";
 //----
    group { name: "e/comp/still";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
       }
       parts {
          part { name: "shadow";
             mouse_events: 0;
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -37801,7 +37801,7 @@ target: "region";
 //----
    group { name: "e/comp/popup";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
       }
       parts {
          part { name: "clipper";
@@ -37830,7 +37830,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -37931,7 +37931,7 @@ target: "region";
 //----
    group { name: "e/comp/menu";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
       }
       parts {
          part { name: "clipper";
@@ -37960,7 +37960,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -38060,7 +38060,7 @@ target: "region";
    }
    group { name: "e/comp/everything";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
       }
       parts {
 	part { name: "clipper";
@@ -38110,7 +38110,7 @@ target: "region";
 	clip_to: "clipper";
 	  description { state: "default" 0.0;
 	    image {
-	    normal: "comp-img/sh1.png";
+	    normal: "img/comp-sh1.png";
 	    border: 18 18 18 18;
 	    middle: 0;
 	    }
@@ -38231,7 +38231,7 @@ target: "region";
 /*
    group { name: "e/comp/slow";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
       }
       parts {
          part { name: "clipper";
@@ -38260,7 +38260,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -38350,7 +38350,7 @@ target: "region";
 //----
    group { name: "e/comp/fast";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
       }
       parts {
          part { name: "clipper";
@@ -38379,7 +38379,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -38469,7 +38469,7 @@ target: "region";
 //----
    group { name: "e/comp/focus-out-colored";
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
          image: "img/bt_glow.png" COMP;
       }
       parts {
@@ -38499,7 +38499,7 @@ target: "region";
             clip_to: "clipper";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -38684,7 +38684,7 @@ target: "region";
 //         item: "screen.overlay" "fullscreen.overlay";
       }
       images {
-         image: "comp-img/sh1.png" COMP;
+         image: "img/comp-sh1.png" COMP;
          image: "img/bg_shadow.png" COMP;
       }
       parts {
@@ -38784,7 +38784,7 @@ target: "region";
             clip_to: "clipper_sh";
             description { state: "default" 0.0;
                image {
-                  normal: "comp-img/sh1.png";
+                  normal: "img/comp-sh1.png";
                   border: 18 18 18 18;
                   middle: 0;
                }
@@ -39044,7 +39044,7 @@ target: "region";
 	       offset: -8 -8;			\
 	       to: NAME"_bg";			\
 	       }				\
-	    image.normal: ICON"img/.png";		\
+	    image.normal: ICON".png";		\
 	    }					\
 	 }					\
 	 part {					\
@@ -39109,11 +39109,11 @@ target: "region";
 	 }					\
 
 	 
-	 NAV_BUTTON("back",       "icon_left_arrow",  "begin", 5);
-	 NAV_BUTTON("forward",    "icon_right_arrow", "back_bg", 1);
-	 NAV_BUTTON("up",         "icon_up_arrow",    "forward_bg", 10);
-	 NAV_BUTTON("refresh",    "refresh",          "up_bg", 1);
-	 NAV_BUTTON("favorites",  "favorites",        "refresh_bg", 1);
+	 NAV_BUTTON("back",       "img/icon_left_arrow",  "begin", 5);
+	 NAV_BUTTON("forward",    "img/icon_right_arrow", "back_bg", 1);
+	 NAV_BUTTON("up",         "img/icon_up_arrow",    "forward_bg", 10);
+	 NAV_BUTTON("refresh",    "img/refresh",          "up_bg", 1);
+	 NAV_BUTTON("favorites",  "img/favorites",        "refresh_bg", 1);
 
 	 part {
 	 name: "e.swallow.pathbar";
