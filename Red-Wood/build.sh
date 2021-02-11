@@ -1,2 +1,2 @@
 #!/bin/sh
-edje_cc $@ -id . -fd . default.edc -o red-wood.edj
+edje_cc $@ -id . -fd . main.edc -o red-wood.edj

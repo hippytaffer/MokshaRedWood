@@ -1,0 +1,54 @@
+//#########################################################
+//### Red-Wood Theme based on E17 themes originally       #
+//### created by Agust J Verdegal T                       #
+//### maintainer: Hippytaff                               #
+//### Original  theme was created by  PrinceAmd           #
+//### Please enjoy !!!!!                                  #
+//###                                                     #
+//#########################################################
+//
+/*Agust*/
+#ifdef E17_PROFILE
+# if E17_PROFILE == LOWRES_PDA
+#  define SM "sm_"
+# elif E17_PROFILE == MEDIUMRES_PDA
+#  define SM "sm_"
+# elif E17_PROFILE == HIRES_PDA
+#  define SM "sm_"
+# elif E17_PROFILE == SLOW_PC
+#  define SM "sm_"
+# elif E17_PROFILE == MEDIUM_PC
+#  define SM
+# elif E17_PROFILE == FAST_PC
+#  define SM
+# endif
+#else
+# define SM
+#endif
+
+//~ fonts {
+   //~ font: "Vera.ttf"   "Edje-Vera";
+   //~ font: "VeraBd.ttf" "Edje-Vera-Bold";
+//~ }
+
+#if 0
+spectra {
+  spectrum {
+    name: "black_to_trans";
+    color: 0 0 0 255 1;
+    color: 0 0 0 0 1;
+  }
+}
+#endif
+
+
+collections {
+#include "default.edc"
+#include "macros.edc"
+#include "tasks.edc"
+#include "toolbar.edc"
+#include "evrything.edc"
+}
+
+
+
